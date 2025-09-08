@@ -3,6 +3,7 @@ import { ArrowDown, Download } from 'lucide-react';
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
 
+
 const Hero: React.FC = () => {
   const [isImageExpanded, setIsImageExpanded] = useState(false);
 
@@ -50,7 +51,7 @@ const Hero: React.FC = () => {
           {/* Profile Image */}
           <div className="mb-8">
             <img
-              src="src/images/WhatsApp Image 2025-09-08 at 13.23.27_729837a1.jpg"
+              src="dist/images/WhatsApp Image 2025-09-08 at 13.23.27_729837a1.jpg"
               alt="Profile"
               className="w-32 h-32 mx-auto rounded-full border-4 border-white shadow-xl cursor-pointer transition-all duration-300 hover:shadow-2xl"
               onClick={handleImageClick}
@@ -194,7 +195,7 @@ const Hero: React.FC = () => {
         >
           <div className="relative">
             <img
-              src="src/images/WhatsApp Image 2025-09-08 at 13.23.27_729837a1.jpg"
+              src="dist/images/WhatsApp Image 2025-09-08 at 13.23.27_729837a1.jpg"
               alt="Profile Expanded"
               className="max-w-[90vw] max-h-[90vh] rounded-lg shadow-2xl"
             />
