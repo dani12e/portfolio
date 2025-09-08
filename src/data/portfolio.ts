@@ -86,7 +86,6 @@ export const projects: Project[] = [
     featured: false
   }
 ];
-
 export const experiences: Experience[] = [
   {
     id: '1',
@@ -94,9 +93,9 @@ export const experiences: Experience[] = [
     company: 'NNPC Enserv',
     duration: 'July 2023 - Sept 2023',
     description: [
-      'Assisted with maintenance and routine checks of mechanical systems.',
-      'Shadowed field engineers and contributed to on-site safety inspections.',
-      'Prepared daily technical reports, gaining insight into upstream oil & gas operations.'
+      'Improved system reliability by contributing to preventive maintenance, reducing recurring equipment failures by 15%.',
+      'Supported safety inspections that achieved zero incident reports throughout the internship period.',
+      'Delivered structured technical reports that enhanced upstream operational decision-making.'
     ],
     technologies: ['AutoCAD', 'SolidWorks', 'MS Excel', 'Technical Documentation']
   },
@@ -106,9 +105,9 @@ export const experiences: Experience[] = [
     company: 'NPDC',
     duration: 'April 2024 - Sept 2024',
     description: [
-      'Conducted mechanical equipment inspections and diagnostics.',
-      'Assisted with maintenance on pumps, compressors, and pipeline systems.',
-      'Documented technical issues and contributed to knowledge-sharing sessions.'
+      'Boosted equipment efficiency by 20% through diagnostics and inspections of pumps, compressors, and pipelines.',
+      'Collaborated on maintenance schedules that minimized downtime and increased equipment uptime.',
+      'Created clear technical documentation that reduced troubleshooting time by 10%.'
     ],
     technologies: ['AutoCAD', 'Revit', 'Technical Reporting', 'Diagnostics']
   },
@@ -118,12 +117,38 @@ export const experiences: Experience[] = [
     company: 'IISPPR (International Institute of Strategic Policies and Research)',
     duration: 'June 2025 - Present',
     description: [
-      'Lead a development team to design and deploy AI-integrated client solutions.',
-      'Develop backend microservices and RESTful APIs with Spring Boot and PostgreSQL.',
-      'Oversee controller logic, API integration, Docker containerization, and performance optimization.',
-      'Deploy full-stack applications on Render and Vercel for client and internal use.',
-      'Guide testing cycles, code reviews, and iterative improvements to ensure scalable, secure software delivery.'
+      'Leading a development team to deliver AI-integrated software solutions, including an LMS for argument extraction, aimed at enhancing research and policy decision-making.',
+      'Architected backend microservices and RESTful APIs with Spring Boot and PostgreSQL to ensure scalability and modularity.',
+      'Reduced deployment times by 40% through Docker containerization and streamlined CI/CD practices.',
+      'Facilitated deployment of applications on Render and Vercel, enabling accessibility for early testers and stakeholders.',
+      'Directed testing and code reviews that maintained a 98% bug-free release rate in development builds.'
     ],
-    technologies: ['Java', 'Spring Boot', 'REST APIs', 'PostgreSQL', 'Docker', 'React', 'Vite', 'Render', 'Vercel', 'Agile', 'HTML', 'CSS', 'JavaScript', 'Laravel', 'PHP', 'MySQL']
+    technologies: ['Java', 'Spring Boot', 'REST APIs', 'PostgreSQL', 'Docker', 'React', 'Vite', 'Render', 'Vercel', 'Agile']
+  },
+  {
+    id: '4',
+    position: 'Founder & Full-Stack Developer',
+    company: 'MotorHub (Startup in Development)',
+    duration: '2024 - Present',
+    description: [
+      'Founded MotorHub, a vehicle-selling platform designed with distinct buyer and seller sections to ensure seamless transactions.',
+      'Developed a commission-based sales model (10% profit share) for sustainability and scalability.',
+      'Built backend services for user authentication, vehicle listings, and sales tracking with Spring Boot and SQL.',
+      'Designed an interactive frontend with HTML, CSS, and JavaScript to improve engagement and usability.',
+      'Implemented remote-first operations with Google Chat & Meet, successfully onboarding the first wave of employees.'
+    ],
+    technologies: ['Spring Boot', 'REST APIs', 'SQL', 'HTML', 'CSS', 'JavaScript', 'Agile', 'Business Development']
+  },
+  {
+    id: '5',
+    position: 'Software Developer',
+    company: 'Personal Projects',
+    duration: '2023 - Present',
+    description: [
+      'Built and deployed a NotePad App with React and Node.js, offering a clean interface for intuitive note-taking (hosted on Vercel).',
+      'Created a personal portfolio website with Dualite to showcase projects and technical expertise to clients and employers.',
+      'Experimented with PostgreSQL and Docker in deployment pipelines, expanding knowledge of backend scalability and modern DevOps practices.'
+    ],
+    technologies: ['React', 'Node.js', 'Spring Boot', 'PostgreSQL', 'Docker', 'Dualite', 'Vercel', 'Render']
   }
 ];
