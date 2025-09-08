@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Github, Linkedin } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -37,20 +37,20 @@ const Contact: React.FC = () => {
     {
       icon: Mail,
       title: 'Email',
-      content: 'your.email@example.com',
-      href: 'mailto:your.email@example.com'
+      content: 'danielgbede2@gmail.com',
+      href: 'mailto:danielgbede2@gmail.com'
     },
     {
       icon: Phone,
       title: 'Phone',
-      content: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
+      content: '+234 903 791 9639',
+      href: 'tel:+2349037919639'
     },
     {
       icon: MapPin,
       title: 'Location',
-      content: 'Your City, Country',
-      href: 'https://maps.google.com/?q=Your+City+Country'
+      content: 'Nigeria', // Replace with your actual city
+      href: 'https://maps.google.com/?q=Nigeria'
     }
   ];
 
@@ -58,21 +58,16 @@ const Contact: React.FC = () => {
     {
       icon: Github,
       name: 'GitHub',
-      href: 'https://github.com/yourusername',
+      href: 'https://github.com/dani12e',
       color: 'hover:text-gray-900'
     },
     {
       icon: Linkedin,
       name: 'LinkedIn',
-      href: 'https://linkedin.com/in/yourusername',
+      href: 'https://www.linkedin.com/in/gbede-daniel-582a8721a/', // Replace with your exact LinkedIn URL
       color: 'hover:text-blue-600'
-    },
-    {
-      icon: Twitter,
-      name: 'Twitter',
-      href: 'https://twitter.com/yourusername',
-      color: 'hover:text-blue-400'
     }
+    // Twitter omitted unless you provide a handle
   ];
 
   return (
@@ -141,9 +136,7 @@ const Contact: React.FC = () => {
                 Available for Work
               </h4>
               <p className="text-gray-700">
-                I'm currently available for freelance projects and full-time opportunities. 
-                Let's discuss how we can work together to bring your ideas to life.
-              </p>
+                I'm currently available for Java development opportunities, API integration projects, and full-stack web development roles. Let's discuss how we can work together to bring your ideas to life.              </p>
             </div>
           </div>
 

@@ -12,13 +12,11 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Your Name</h3>
+            <h3 className="text-xl font-bold mb-4">Gbede Daniel</h3>
             <p className="text-gray-300 mb-4">
-              Full Stack Developer passionate about creating beautiful, functional applications 
-              that make a difference in people's lives.
-            </p>
+              Java Developer and Full-Stack Developer passionate about building functional, scalable applications that solve real-world problems. Experienced in Java, Spring Boot, RESTful APIs, React, and database management, with a track record of deploying projects on platforms like Render and Vercel.            </p>
             <p className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} Your Name. All rights reserved.
+              © 2025 Gbede Daniel. All rights reserved.
             </p>
           </div>
 
@@ -30,7 +28,6 @@ const Footer: React.FC = () => {
                 { name: 'Home', href: '#home' },
                 { name: 'About', href: '#about' },
                 { name: 'Projects', href: '#projects' },
-                { name: 'Skills', href: '#skills' },
                 { name: 'Experience', href: '#experience' },
                 { name: 'Contact', href: '#contact' }
               ].map((link) => (
@@ -50,11 +47,11 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Get In Touch</h4>
             <div className="space-y-2 text-gray-300">
-              <p>📧 your.email@example.com</p>
-              <p>📱 +1 (555) 123-4567</p>
-              <p>📍 Your City, Country</p>
+              <p>📧 danielgbede2@gmail.com</p>
+              <p>📱 +234 903 791 9639</p>
+              <p>📍 Nigeria</p> {/* Replace with your actual city */}
             </div>
-            
+
             <div className="mt-6">
               <p className="text-gray-400 text-sm mb-2">Available for:</p>
               <div className="flex flex-wrap gap-2">
@@ -67,6 +64,12 @@ const Footer: React.FC = () => {
                 <span className="bg-purple-600 text-white text-xs px-2 py-1 rounded">
                   Consulting
                 </span>
+                <span className="bg-red-600 text-white text-xs px-2 py-1 rounded">
+                  Full-stack Projects
+                </span>
+                <span className="bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  Contracts
+                </span>
               </div>
             </div>
           </div>
@@ -77,7 +80,7 @@ const Footer: React.FC = () => {
             <p className="text-gray-400 text-sm flex items-center">
               Made with <Heart className="text-red-500 mx-1" size={16} /> using React & TypeScript
             </p>
-            
+
             <button
               onClick={scrollToTop}
               className="mt-4 md:mt-0 bg-blue-600 hover:bg-blue-700 text-white p-2 rounded-lg transition-colors duration-200"

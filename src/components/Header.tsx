@@ -18,15 +18,14 @@ const Header: React.FC = () => {
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
     { name: 'Projects', href: '#projects' },
-    { name: 'Skills', href: '#skills' },
     { name: 'Experience', href: '#experience' },
     { name: 'Contact', href: '#contact' }
   ];
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/yourusername', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/yourusername', label: 'LinkedIn' },
-    { icon: Mail, href: 'mailto:your.email@example.com', label: 'Email' }
+    { icon: Github, href: 'https://github.com/dani12e', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/gbede-daniel-582a8721a/', label: 'LinkedIn' },
+    { icon: Mail, href: 'mailto:danielgbede2@gmail.com', label: 'Email' }
   ];
 
   return (
@@ -38,7 +37,7 @@ const Header: React.FC = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="#home" className="text-xl font-bold text-gray-900">
-              Your Name
+             Gbede Daniel
             </a>
           </div>
 

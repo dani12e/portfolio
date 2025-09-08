@@ -9,11 +9,7 @@ const Projects: React.FC = () => {
 
   const categories = [
     { id: 'all', name: 'All Projects' },
-    { id: 'web', name: 'Web Apps' },
-    { id: 'mobile', name: 'Mobile Apps' },
-    { id: 'ai', name: 'AI Projects' },
-    { id: 'other', name: 'Other' }
-  ];
+     ];
 
   const filteredProjects = filter === 'all' 
     ? projects 
@@ -36,7 +32,7 @@ const Projects: React.FC = () => {
         {/* Featured Projects */}
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Featured Projects</h3>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div  className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {featuredProjects.map((project) => (
               <div
                 key={project.id}

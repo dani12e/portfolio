@@ -88,18 +88,15 @@ const Experience: React.FC = () => {
               <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
                 <div>
                   <h4 className="text-xl font-bold text-gray-900 mb-1">
-                    Bachelor of Science in Computer Science
+                    Bachelor of Engineering in Mechanical Engineering
                   </h4>
                   <h5 className="text-lg text-blue-600 mb-2">
-                    Your University Name
-                  </h5>
-                  <p className="text-gray-700">
-                    Graduated with honors. Focused on software engineering, algorithms, and web development.
-                  </p>
+                    Benson Idahosa University                  </h5>
+                 
                 </div>
                 <div className="mt-4 lg:mt-0 flex items-center text-gray-600">
                   <Calendar size={16} className="mr-2" />
-                  <span>2015 - 2019</span>
+                  <span>2020 - 2025</span>
                 </div>
               </div>
             </div>

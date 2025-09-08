@@ -1,27 +1,27 @@
 import React from 'react';
-import { Code2, Palette, Zap, Users } from 'lucide-react';
+import { Code2, Zap, Users, HardHat } from 'lucide-react';
 
 const About: React.FC = () => {
   const highlights = [
     {
       icon: Code2,
-      title: 'Clean Code',
-      description: 'I write maintainable, scalable code that follows best practices and industry standards.'
+      title: 'Java Expertise',
+      description: 'Specialized in Java development with Spring Boot, building robust backend systems, RESTful APIs, and secure web applications following industry best practices.'
     },
     {
-      icon: Palette,
-      title: 'UI/UX Focus',
-      description: 'Creating beautiful and intuitive user interfaces that provide excellent user experiences.'
+      icon: HardHat,
+      title: 'Engineering Background',
+      description: 'Mechanical Engineering graduate with hands-on industrial experience at NNPC and NPDC, bringing systematic problem-solving skills to software development.'
     },
     {
       icon: Zap,
-      title: 'Performance',
-      description: 'Optimizing applications for speed and efficiency to deliver the best possible performance.'
+      title: 'AI Integration',
+      description: 'Currently working on AI-integrated bot systems and automation solutions, combining traditional software development with modern AI technologies.'
     },
     {
       icon: Users,
-      title: 'Collaboration',
-      description: 'Working effectively with teams and stakeholders to deliver projects on time and within scope.'
+      title: 'Team Collaboration',
+      description: 'Experience working in cross-functional teams, handling API integrations, and collaborating with frontend developers on enterprise-level projects.'
     }
   ];
 
@@ -33,7 +33,7 @@ const About: React.FC = () => {
             About Me
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Passionate developer with a love for creating digital experiences that make a difference
+            Bridging engineering excellence with modern software development
           </p>
         </div>
 
@@ -41,26 +41,24 @@ const About: React.FC = () => {
           {/* Text Content */}
           <div>
             <h3 className="text-2xl font-bold text-gray-900 mb-6">
-              Building the Future, One Line of Code at a Time
+              From Mechanical Engineering to Software Innovation
             </h3>
-            
+
             <div className="space-y-4 text-gray-700">
               <p>
-                I'm a passionate full-stack developer with over {new Date().getFullYear() - 2019} years of experience 
-                creating web and mobile applications. I started my journey in computer science and have been 
-                fascinated by the endless possibilities of technology ever since.
+                I'm a passionate Java Developer with a unique engineering foundation. After completing my Mechanical Engineering degree at Benson Idahosa University, I discovered my true calling in software development, where I can apply the same systematic thinking and problem-solving skills that engineering taught me.
               </p>
-              
+
               <p>
-                My expertise spans across modern frontend frameworks like React and React Native, 
-                backend technologies including Node.js and Python, and various databases and cloud services. 
-                I'm always eager to learn new technologies and apply them to solve real-world problems.
+                My journey includes valuable industrial experience through internships at NNPC Enserv and NPDC, where I worked on mechanical systems and gained insights into large-scale operations. This background gives me a unique perspective on building software solutions that work in real-world, mission-critical environments.
               </p>
-              
+
               <p>
-                When I'm not coding, you can find me contributing to open-source projects, writing technical 
-                blog posts, or exploring the latest trends in web development. I believe in continuous learning 
-                and sharing knowledge with the developer community.
+               Currently, I'm working as a Software Engineering Intern at IISPPR, where I collaborate with cross-functional teams to build AI-integrated bots and develop RESTful APIs. I specialize in Java and Spring Boot, focusing on creating secure, scalable backend systems that power modern web applications.
+              </p>
+
+              <p>
+                When I'm not coding, I'm exploring new technologies, contributing to open-source projects, or working on personal projects that challenge me to grow as a developer. I believe in continuous learning and the power of technology to solve real-world problems.
               </p>
             </div>
 

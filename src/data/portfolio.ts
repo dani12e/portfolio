@@ -1,130 +1,129 @@
-import { Project, Skill, Experience } from '../types';
+import { Project, Experience } from '../types';
 
 export const projects: Project[] = [
   {
     id: '1',
-    title: 'E-Commerce Platform',
-    description: 'Full-stack e-commerce solution with React and Node.js',
-    longDescription: 'A comprehensive e-commerce platform built with modern technologies. Features include user authentication, product catalog, shopping cart, payment integration, and admin dashboard.',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Express', 'Stripe API', 'JWT'],
-    githubUrl: 'https://github.com/yourusername/ecommerce-platform',
-    liveUrl: 'https://your-ecommerce.vercel.app',
-    imageUrl: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400/3b82f6/ffffff?text=E-Commerce+Platform',
-    featured: true,
-    category: 'web'
+    title: 'Notepad Web App',
+    description: 'Full-stack React/Java app, deployed on Render/Vercel, for note-taking and local storage.',
+    longDescription: 'A full-stack web application built with React on the frontend and Java on the backend. It enables users to create, edit, and store notes using local storage for persistence. Deployed on Render and Vercel for seamless accessibility.',
+    imageUrl: 'https://placehold.co/600x400/png?text=Notepad+Web+App',
+    technologies: ['React', 'Java', 'Vite', 'Render', 'Vercel', 'Local Storage'],
+    // githubUrl: 'https://github.com/danielgbede2/notepad-web-app',
+    liveUrl: 'https://notes-frontend-topaz-nine.vercel.app', // Placeholder; replace with actual
+    category: 'web',
+    featured: true
   },
   {
     id: '2',
-    title: 'Task Management App',
-    description: 'React Native mobile app for productivity tracking',
-    longDescription: 'A cross-platform mobile application for task management and productivity tracking. Features include task creation, categorization, progress tracking, and team collaboration.',
-    technologies: ['React Native', 'TypeScript', 'Firebase', 'Redux Toolkit'],
-    githubUrl: 'https://github.com/yourusername/task-manager',
-    imageUrl: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400/10b981/ffffff?text=Task+Manager',
-    featured: true,
-    category: 'mobile'
+    title: 'MotorHub - Vehicle Selling Web App',
+    description: 'Full-stack Java app with user authentication, posting system, image uploads, PostgreSQL backend, and Dockerized deployment.',
+    longDescription: 'A comprehensive vehicle selling platform (MotorHub Nigeria) featuring user authentication, a posting system for listings, image uploads, and a robust PostgreSQL backend. Containerized with Docker for easy deployment and scalability.',
+    imageUrl: 'https://placehold.co/600x400/png?text=MotorHub+Vehicle+Selling+App',
+    technologies: ['Java', 'Spring Boot', 'PostgreSQL', 'Docker', 'User Authentication', 'Image Uploads'],
+    // githubUrl: 'https://github.com/danielgbede2/motorhub-vehicle-selling-app',
+    // liveUrl: 'https://motorhub-ng.onrender.com', // Placeholder; replace with actual
+    category: 'web',
+    featured: false
   },
   {
     id: '3',
-    title: 'Data Visualization Dashboard',
-    description: 'Interactive dashboard for business analytics',
-    longDescription: 'An interactive dashboard for visualizing business data and analytics. Built with D3.js and React, featuring real-time updates and multiple chart types.',
-    technologies: ['React', 'D3.js', 'Python', 'FastAPI', 'PostgreSQL'],
-    githubUrl: 'https://github.com/yourusername/data-dashboard',
-    liveUrl: 'https://analytics-dashboard.vercel.app',
-    imageUrl: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400/8b5cf6/ffffff?text=Analytics+Dashboard',
-    featured: false,
-    category: 'web'
+    title: 'Blog App with Spring Boot',
+    description: 'CRUD blog with role-based access and user profiles.',
+    longDescription: 'A blog application developed using Spring Boot, supporting CRUD operations for posts, role-based access control, and user profiles for personalized experiences.',
+    imageUrl: 'https://placehold.co/600x400/png?text=Blog+App',
+    technologies: ['Java', 'Spring Boot', 'PostgreSQL', 'Thymeleaf', 'Role-Based Access'],
+    // githubUrl: 'https://github.com/danielgbede2/blog-app-spring-boot',
+    // liveUrl: 'https://blog-app.onrender.com', // Placeholder; replace with actual
+    category: 'web',
+    featured: false
   },
   {
     id: '4',
-    title: 'AI Chatbot',
-    description: 'Intelligent chatbot using natural language processing',
-    longDescription: 'An AI-powered chatbot that uses natural language processing to understand and respond to user queries. Built with Python and integrated with various APIs.',
-    technologies: ['Python', 'OpenAI API', 'Flask', 'React', 'WebSocket'],
-    githubUrl: 'https://github.com/yourusername/ai-chatbot',
-    imageUrl: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400/f59e0b/ffffff?text=AI+Chatbot',
-    featured: false,
-    category: 'ai'
+    title: 'AI Argument Extraction LMS Project',
+    description: 'Led development of a learning management system leveraging AI to extract arguments.',
+    longDescription: 'An AI-powered Learning Management System (LMS) where I led the team in integrating AI capabilities to extract and analyze arguments from educational content, enhancing learning outcomes.',
+    imageUrl: 'https://placehold.co/600x400/png?text=AI+Argument+Extraction+LMS',
+    technologies: ['Java', 'Spring Boot', 'AI Integration', 'PostgreSQL', 'React'],
+    // githubUrl: 'https://github.com/danielgbede2/ai-argument-lms',
+    // liveUrl: 'https://ai-lms.onrender.com', // Placeholder; replace with actual
+    category: 'ai',
+    featured: false
   },
   {
     id: '5',
     title: 'Portfolio Website',
-    description: 'Personal portfolio built with React and TypeScript',
-    longDescription: 'A responsive portfolio website showcasing projects and skills. Built with React, TypeScript, and Tailwind CSS with smooth animations and modern design.',
-    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
-    githubUrl: 'https://github.com/yourusername/portfolio',
-    liveUrl: 'https://yourportfolio.com',
-    imageUrl: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400/ef4444/ffffff?text=Portfolio+Site',
-    featured: false,
-    category: 'web'
+    description: 'Built with Dualite, showcasing projects, deployments, and technical skills.',
+    longDescription: 'A personal portfolio website created using Dualite, highlighting my projects, technical skills, and deployments in a clean, modern interface.',
+    imageUrl: 'https://placehold.co/600x400/png?text=Portfolio+Website',
+    technologies: ['Dualite', 'React', 'Vite', 'Figma', 'Render', 'Vercel'],
+    // githubUrl: 'https://github.com/danielgbede2/portfolio-website',
+    // liveUrl: 'https://your-portfolio-url.com', // Replace with your actual portfolio URL
+    category: 'web',
+    featured: false
   },
   {
     id: '6',
-    title: 'Weather App',
-    description: 'Mobile weather application with location services',
-    longDescription: 'A beautiful weather application that provides current weather and forecasts. Features location-based weather, interactive maps, and weather alerts.',
-    technologies: ['React Native', 'OpenWeather API', 'Geolocation', 'Redux'],
-    githubUrl: 'https://github.com/yourusername/weather-app',
-    imageUrl: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400/06b6d4/ffffff?text=Weather+App',
-    featured: false,
-    category: 'mobile'
+    title: 'Password Reset Module',
+    description: 'Secure, token-based email password reset system.',
+    longDescription: 'A modular password reset system implementing secure token-based authentication via email, designed for integration into larger applications.',
+    imageUrl: 'https://placehold.co/600x400/png?text=Password+Reset+Module',
+    technologies: ['Java', 'Spring Boot', 'Email Integration', 'Token Authentication'],
+    // githubUrl: 'https://github.com/danielgbede2/password-reset-module',
+    liveUrl: undefined, // No live demo mentioned
+    category: 'other',
+    featured: false
+  },
+  {
+    id: '7',
+    title: 'Microservices & API Development',
+    description: 'Designed modular backend services for scalable applications.',
+    longDescription: 'Development of microservices architecture and RESTful APIs using Spring Boot, focused on modularity, scalability, and efficient API integration for various applications.',
+    imageUrl: 'https://placehold.co/600x400/png?text=Microservices+API',
+    technologies: ['Java', 'Spring Boot', 'Microservices', 'REST APIs', 'Docker', 'PostgreSQL'],
+    // githubUrl: 'https://github.com/danielgbede2/microservices-api',
+    liveUrl: undefined, // No specific live demo
+    category: 'other',
+    featured: false
   }
-];
-
-export const skills: Skill[] = [
-  { name: 'React', level: 95, category: 'frontend' },
-  { name: 'TypeScript', level: 90, category: 'frontend' },
-  { name: 'JavaScript', level: 95, category: 'frontend' },
-  { name: 'Tailwind CSS', level: 85, category: 'frontend' },
-  { name: 'Node.js', level: 80, category: 'backend' },
-  { name: 'Python', level: 75, category: 'backend' },
-  { name: 'MongoDB', level: 70, category: 'database' },
-  { name: 'PostgreSQL', level: 75, category: 'database' },
-  { name: 'Git', level: 90, category: 'tools' },
-  { name: 'Docker', level: 65, category: 'tools' },
-  { name: 'AWS', level: 60, category: 'tools' },
-  { name: 'React Native', level: 80, category: 'frontend' }
 ];
 
 export const experiences: Experience[] = [
   {
     id: '1',
-    company: 'Tech Solutions Inc.',
-    position: 'Senior Frontend Developer',
-    duration: '2022 - Present',
+    position: 'Engineering Intern (SIWES)',
+    company: 'NNPC Enserv',
+    duration: 'July 2023 - Sept 2023',
     description: [
-      'Lead frontend development for enterprise web applications',
-      'Mentor junior developers and conduct code reviews',
-      'Implemented responsive designs and improved performance by 40%',
-      'Collaborated with UX/UI designers and backend teams'
+      'Assisted with maintenance and routine checks of mechanical systems.',
+      'Shadowed field engineers and contributed to on-site safety inspections.',
+      'Prepared daily technical reports, gaining insight into upstream oil & gas operations.'
     ],
-    technologies: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS']
+    technologies: ['AutoCAD', 'SolidWorks', 'MS Excel', 'Technical Documentation']
   },
   {
     id: '2',
-    company: 'Digital Agency',
-    position: 'Full Stack Developer',
-    duration: '2020 - 2022',
+    position: 'Industrial Trainee (SIWES)',
+    company: 'NPDC',
+    duration: 'April 2024 - Sept 2024',
     description: [
-      'Developed and maintained client websites and web applications',
-      'Built RESTful APIs and database schemas',
-      'Managed cloud deployments and CI/CD pipelines',
-      'Worked directly with clients to gather requirements'
+      'Conducted mechanical equipment inspections and diagnostics.',
+      'Assisted with maintenance on pumps, compressors, and pipeline systems.',
+      'Documented technical issues and contributed to knowledge-sharing sessions.'
     ],
-    technologies: ['React', 'Node.js', 'MongoDB', 'Express', 'AWS']
+    technologies: ['AutoCAD', 'Revit', 'Technical Reporting', 'Diagnostics']
   },
   {
     id: '3',
-    company: 'Startup XYZ',
-    position: 'Frontend Developer',
-    duration: '2019 - 2020',
+    position: 'Software Engineering Intern / Team Lead',
+    company: 'IISPPR (International Institute of Strategic Policies and Research)',
+    duration: 'June 2025 - Present',
     description: [
-      'Built responsive web applications from scratch',
-      'Implemented modern JavaScript frameworks and libraries',
-      'Optimized applications for performance and SEO',
-      'Participated in agile development processes'
+      'Lead a development team to design and deploy AI-integrated client solutions.',
+      'Develop backend microservices and RESTful APIs with Spring Boot and PostgreSQL.',
+      'Oversee controller logic, API integration, Docker containerization, and performance optimization.',
+      'Deploy full-stack applications on Render and Vercel for client and internal use.',
+      'Guide testing cycles, code reviews, and iterative improvements to ensure scalable, secure software delivery.'
     ],
-    technologies: ['React', 'JavaScript', 'CSS3', 'HTML5', 'Redux']
+    technologies: ['Java', 'Spring Boot', 'REST APIs', 'PostgreSQL', 'Docker', 'React', 'Vite', 'Render', 'Vercel', 'Agile', 'HTML', 'CSS', 'JavaScript', 'Laravel', 'PHP', 'MySQL']
   }
 ];
