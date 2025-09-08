@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ArrowDown, Download } from 'lucide-react';
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
 
 const Hero: React.FC = () => {
+  const [isImageExpanded, setIsImageExpanded] = useState(false);
+
   const downloadResume = () => {
     const input = document.getElementById('cv-content');
     if (!input) {
@@ -18,7 +20,6 @@ const Hero: React.FC = () => {
       const pdfWidth = pdf.internal.pageSize.getWidth();
       const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
 
-      // Add page break if content exceeds A4 height (approximately 297mm)
       if (pdfHeight > 297) {
         pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, 297);
         pdf.addPage();
@@ -33,16 +34,26 @@ const Hero: React.FC = () => {
     });
   };
 
+  const handleImageClick = () => {
+    setIsImageExpanded(true);
+  };
+
+  const handleCloseImage = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setIsImageExpanded(false);
+  };
+
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100">
+    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center">
           {/* Profile Image */}
           <div className="mb-8">
             <img
-              src="https://img-wrapper.vercel.app/image?url=https://placehold.co/200x200/3b82f6/ffffff?text=GD"
+              src="src/images/WhatsApp Image 2025-09-08 at 13.23.27_729837a1.jpg"
               alt="Profile"
-              className="w-32 h-32 mx-auto rounded-full border-4 border-white shadow-xl"
+              className="w-32 h-32 mx-auto rounded-full border-4 border-white shadow-xl cursor-pointer transition-all duration-300 hover:shadow-2xl"
+              onClick={handleImageClick}
             />
           </div>
 
@@ -174,6 +185,28 @@ const Hero: React.FC = () => {
           </ul>
         </div>
       </div>
+
+      {/* Expanded Image Modal */}
+      {isImageExpanded && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
+          onClick={handleCloseImage}
+        >
+          <div className="relative">
+            <img
+              src="src/images/WhatsApp Image 2025-09-08 at 13.23.27_729837a1.jpg"
+              alt="Profile Expanded"
+              className="max-w-[90vw] max-h-[90vh] rounded-lg shadow-2xl"
+            />
+            <button
+              onClick={handleCloseImage}
+              className="absolute top-2 right-2 text-white text-3xl bg-gray-800 rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-700 transition-colors"
+            >
+              ×
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

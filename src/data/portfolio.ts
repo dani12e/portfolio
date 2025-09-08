@@ -57,9 +57,9 @@ export const projects: Project[] = [
     imageUrl: 'https://placehold.co/600x400/png?text=Portfolio+Website',
     technologies: ['Dualite', 'React', 'Vite', 'Figma', 'Render', 'Vercel'],
     // githubUrl: 'https://github.com/danielgbede2/portfolio-website',
-    // liveUrl: 'https://your-portfolio-url.com', // Replace with your actual portfolio URL
+    liveUrl: 'https://danielgbede.netlify.app/', // Replace with your actual portfolio URL
     category: 'web',
-    featured: false
+    featured: true
   },
   {
     id: '6',
