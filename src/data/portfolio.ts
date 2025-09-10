@@ -5,11 +5,12 @@ export const projects: Project[] = [
     id: '1',
     title: 'Notepad Web App',
     description: 'Full-stack React/Java app, deployed on Render/Vercel, for note-taking and local storage.',
-    longDescription: 'A full-stack web application built with React on the frontend and Java on the backend. It enables users to create, edit, and store notes using local storage for persistence. Deployed on Render and Vercel for seamless accessibility.',
+    longDescription: 'A full-stack web application built with React on the frontend and Java on the backend. It enables users to create, edit, and store notes using local storage for persistence (or backend API when active). Deployed on Render and Vercel for seamless accessibility.',
     imageUrl: 'https://placehold.co/600x400/png?text=Notepad+Web+App',
     technologies: ['React', 'Java', 'Vite', 'Render', 'Vercel', 'Local Storage'],
-    // githubUrl: 'https://github.com/danielgbede2/notepad-web-app',
-    liveUrl: 'https://notes-frontend-topaz-nine.vercel.app', // Placeholder; replace with actual
+    githubUrl: 'https://github.com/danielgbede2/notepad-web-app',
+    backendUrl: 'https://notes-backend-2-p3d7.onrender.com', // Deploy backend on Render and replace this URL
+    liveUrl: 'https://notes-frontend-topaz-nine.vercel.app',
     category: 'web',
     featured: true
   },
@@ -20,10 +21,11 @@ export const projects: Project[] = [
     longDescription: 'A comprehensive vehicle selling platform (MotorHub Nigeria) featuring user authentication, a posting system for listings, image uploads, and a robust PostgreSQL backend. Containerized with Docker for easy deployment and scalability.',
     imageUrl: 'https://placehold.co/600x400/png?text=MotorHub+Vehicle+Selling+App',
     technologies: ['Java', 'Spring Boot', 'PostgreSQL', 'Docker', 'User Authentication', 'Image Uploads'],
-    // githubUrl: 'https://github.com/danielgbede2/motorhub-vehicle-selling-app',
-    // liveUrl: 'https://motorhub-ng.onrender.com', // Placeholder; replace with actual
+    githubUrl: 'https://github.com/danielgbede2/motorhub-vehicle-selling-app',
+    liveUrl: undefined, // Update if deployed
     category: 'web',
-    featured: false
+    featured: false,
+    backendUrl: ''
   },
   {
     id: '3',
@@ -32,10 +34,11 @@ export const projects: Project[] = [
     longDescription: 'A blog application developed using Spring Boot, supporting CRUD operations for posts, role-based access control, and user profiles for personalized experiences.',
     imageUrl: 'https://placehold.co/600x400/png?text=Blog+App',
     technologies: ['Java', 'Spring Boot', 'PostgreSQL', 'Thymeleaf', 'Role-Based Access'],
-    // githubUrl: 'https://github.com/danielgbede2/blog-app-spring-boot',
-    // liveUrl: 'https://blog-app.onrender.com', // Placeholder; replace with actual
+    githubUrl: 'https://github.com/danielgbede2/blog-app-spring-boot',
+    liveUrl: undefined, // Update if deployed
     category: 'web',
-    featured: false
+    featured: false,
+    backendUrl: ''
   },
   {
     id: '4',
@@ -44,10 +47,11 @@ export const projects: Project[] = [
     longDescription: 'An AI-powered Learning Management System (LMS) where I led the team in integrating AI capabilities to extract and analyze arguments from educational content, enhancing learning outcomes.',
     imageUrl: 'https://placehold.co/600x400/png?text=AI+Argument+Extraction+LMS',
     technologies: ['Java', 'Spring Boot', 'AI Integration', 'PostgreSQL', 'React'],
-    // githubUrl: 'https://github.com/danielgbede2/ai-argument-lms',
-    // liveUrl: 'https://ai-lms.onrender.com', // Placeholder; replace with actual
+    githubUrl: 'https://github.com/danielgbede2/ai-argument-lms',
+    liveUrl: undefined, // Update if deployed
     category: 'ai',
-    featured: false
+    featured: false,
+    backendUrl: ''
   },
   {
     id: '5',
@@ -56,10 +60,11 @@ export const projects: Project[] = [
     longDescription: 'A personal portfolio website created using Dualite, highlighting my projects, technical skills, and deployments in a clean, modern interface.',
     imageUrl: 'https://placehold.co/600x400/png?text=Portfolio+Website',
     technologies: ['Dualite', 'React', 'Vite', 'Figma', 'Render', 'Vercel'],
-    // githubUrl: 'https://github.com/danielgbede2/portfolio-website',
-    liveUrl: 'https://danielgbede.netlify.app/', // Replace with your actual portfolio URL
+    githubUrl: 'https://github.com/danielgbede2/portfolio-website',
+    liveUrl: 'https://danielgbede.netlify.app/',
     category: 'web',
-    featured: true
+    featured: true,
+    backendUrl: ''
   },
   {
     id: '6',
@@ -68,10 +73,11 @@ export const projects: Project[] = [
     longDescription: 'A modular password reset system implementing secure token-based authentication via email, designed for integration into larger applications.',
     imageUrl: 'https://placehold.co/600x400/png?text=Password+Reset+Module',
     technologies: ['Java', 'Spring Boot', 'Email Integration', 'Token Authentication'],
-    // githubUrl: 'https://github.com/danielgbede2/password-reset-module',
-    liveUrl: undefined, // No live demo mentioned
+    githubUrl: 'https://github.com/danielgbede2/password-reset-module',
+    liveUrl: undefined,
     category: 'other',
-    featured: false
+    featured: false,
+    backendUrl: ''
   },
   {
     id: '7',
@@ -80,10 +86,11 @@ export const projects: Project[] = [
     longDescription: 'Development of microservices architecture and RESTful APIs using Spring Boot, focused on modularity, scalability, and efficient API integration for various applications.',
     imageUrl: 'https://placehold.co/600x400/png?text=Microservices+API',
     technologies: ['Java', 'Spring Boot', 'Microservices', 'REST APIs', 'Docker', 'PostgreSQL'],
-    // githubUrl: 'https://github.com/danielgbede2/microservices-api',
-    liveUrl: undefined, // No specific live demo
+    githubUrl: 'https://github.com/danielgbede2/microservices-api',
+    liveUrl: undefined,
     category: 'other',
-    featured: false
+    featured: false,
+    backendUrl: ''
   }
 ];
 export const experiences: Experience[] = [

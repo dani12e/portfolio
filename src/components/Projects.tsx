@@ -14,7 +14,7 @@ const Projects: React.FC = () => {
             My Projects
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Here are some of the projects I've worked on. Each one represents a unique challenge and learning experience.
+            Here are some of the projects I've worked on. Each one represents a unique challenge and learning experience. The featured projects have been deployed.
           </p>
         </div>
 
@@ -122,18 +122,8 @@ const Projects: React.FC = () => {
                   </div>
                 </div>
                 
-                <div className="flex gap-4">
-                  {selectedProject.githubUrl && (
-                    <a
-                      href={selectedProject.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors flex items-center gap-2"
-                    >
-                      <Github size={20} />
-                      View Code
-                    </a>
-                  )}
+                <div className="flex flex-wrap gap-4">
+                  
                   {selectedProject.liveUrl && (
                     <a
                       href={selectedProject.liveUrl}
@@ -143,6 +133,17 @@ const Projects: React.FC = () => {
                     >
                       <ExternalLink size={20} />
                       Live Demo
+                    </a>
+                  )}
+                  {selectedProject.backendUrl && (
+                    <a
+                      href={selectedProject.backendUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors flex items-center gap-2"
+                    >
+                      <ExternalLink size={20} />
+                      Backend API
                     </a>
                   )}
                 </div>

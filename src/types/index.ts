@@ -1,4 +1,5 @@
 export interface Project {
+  backendUrl: string;
   id: string;
   title: string;
   description: string;
