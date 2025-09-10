@@ -104,12 +104,6 @@ const Projects: React.FC = () => {
                   </button>
                 </div>
                 
-                <img
-                  src={selectedProject.imageUrl}
-                  alt={selectedProject.title}
-                  className="w-full h-64 object-cover rounded-lg mb-6"
-                />
-                
                 <p className="text-gray-700 mb-6">
                   {selectedProject.longDescription}
                 </p>
